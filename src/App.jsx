@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Custom components
 import Navbar from "./components/Navbar"
-// import Footer from "./components/Footer"
+import Footer from "./components/Footer"
 
 // Page imports
 import Error404 from './pages/Error404';
@@ -17,7 +17,7 @@ function App() {
       {/* <Route path="/calender" element={<Calender/>}/> */}
       <Route path="*" element={<Error404/>}/>
     </Routes>
-    {/* <Footer/> */}
+    <Footer/>
   </Router>
   );
 }
